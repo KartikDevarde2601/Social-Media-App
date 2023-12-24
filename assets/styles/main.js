@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {horizontalScale, verticalScale, fontScale} from './scaling.style';
 
 const styles = StyleSheet.create({
   header: {
@@ -6,9 +7,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingTop: 30,
-    paddingLeft: 17,
-    paddingRight: 26,
+    paddingTop: verticalScale(30),
+    paddingLeft: horizontalScale(17),
+    paddingRight: horizontalScale(26),
   },
 
   messageIcon: {
@@ -18,8 +19,8 @@ const styles = StyleSheet.create({
   },
 
   messageCountContainer: {
-    width: 15,
-    height: 15,
+    width: horizontalScale(15),
+    height: verticalScale(13),
     borderRadius: 50,
     backgroundColor: '#F35BAC',
     flex: 1,
@@ -27,12 +28,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    right: 5,
-    top: 7,
+    right: horizontalScale(5),
+    top: verticalScale(5),
   },
 
   messageCount: {
-    fontSize: 10,
+    fontSize: fontScale(10),
     color: '#fff',
     fontFamily: 'Inter',
     letterSpacing: 0.12,

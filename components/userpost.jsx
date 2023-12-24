@@ -1,5 +1,10 @@
 import React from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
+import {
+  horizontalScale,
+  verticalScale,
+  fontScale,
+} from '../assets/styles/scaling.style';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {
   faHeart,
@@ -56,7 +61,7 @@ const styles = StyleSheet.create({
   iconContainer: {
     flex: 1,
     flexDirection: 'row',
-    marginTop: 10,
+    marginTop: verticalScale(10),
     alignItems: 'center',
   },
 
@@ -64,10 +69,10 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 5,
+    marginTop: verticalScale(5),
   },
   icon: {
-    marginRight: 10,
+    marginRight: horizontalScale(10),
   },
 });
 

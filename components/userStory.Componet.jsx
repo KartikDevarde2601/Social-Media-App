@@ -1,5 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
+import {
+  horizontalScale,
+  verticalScale,
+  fontScale,
+} from '../assets/styles/scaling.style';
 
 const UserStory = props => {
   return (
@@ -15,14 +20,14 @@ const UserStory = props => {
 const styles = StyleSheet.create({
   userStoryContainer: {
     flex: 1,
-    marginRight: 20,
+    marginRight: horizontalScale(20),
     alignItems: 'center',
-    height: 100,
+    height: verticalScale(100),
   },
   userName: {
     color: '#022150',
     fontFamily: 'Inter',
-    fontSize: 14,
+    fontSize: fontScale(14),
     fontWeight: 'bold',
   },
 
@@ -31,7 +36,7 @@ const styles = StyleSheet.create({
     borderColor: '#F35BAC',
     padding: 5,
     borderRadius: 50,
-    marginBottom: 5,
+    marginBottom: verticalScale(5),
   },
 });
 

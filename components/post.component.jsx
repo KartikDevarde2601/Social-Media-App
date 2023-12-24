@@ -3,6 +3,11 @@ import {View, FlatList, StyleSheet} from 'react-native';
 import UserPost from './userpost';
 import PostHeader from './postHeader';
 import PostData from '../utils/postData';
+import {
+  horizontalScale,
+  verticalScale,
+  fontScale,
+} from '../assets/styles/scaling.style';
 
 const Post = () => {
   const pageSize = 4;
@@ -52,10 +57,10 @@ const Post = () => {
 
 const styles = StyleSheet.create({
   postContainer: {
-    marginLeft: 24,
-    marginRight: 24,
-    marginTop: 16,
-    marginBottom: 16,
+    marginLeft: horizontalScale(24),
+    marginRight: horizontalScale(24),
+    marginTop: verticalScale(16),
+    marginBottom: verticalScale(16),
   },
 });
 
